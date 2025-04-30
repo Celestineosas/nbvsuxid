@@ -1,0 +1,130 @@
+/* Tailwind css */
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Font Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import url('href="https://api.fontshare.com/v2/css?f[]=bevellier@400&f[]=melodrama@1&f[]=stardom@400&f[]=tanker@400&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+
+@theme {
+  /* Fonts */
+  --font-inter: "Inter", sans-serif;
+  --font-cormorant: "Cormorant", serif;
+  --font-melodrama: "Melodrama", serif;
+  --font-bevellier: "Bevellier", sans-serif;
+  --font-stardom: "Stardom", sans-serif;
+  --font-tanker: "Tanker", sans-serif;
+  --font-palanquin: "Palanquin", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-babas: "Bebas Neue", sans-serif;
+  --font-comfortaa: "Comfortaa", sans-serif;
+
+  /* Colors */
+  --color-primary: #eceeff;
+  --color-coral-red: #ff6452;
+  --color-slate-gray: #6d6d6d;
+  --color-pale-blue: #f5f6ff;
+  --color-anon-dark: #2b2b2b;
+
+  --color-white-400: rgba(255, 255, 255, 0.8);
+
+  /* Shadow */
+  --shadow-3xl: 0 10px 40px rgba(0, 0, 0, 0.1);
+
+  /* Background Images */
+  --bg-landscape: url("assets/images/bg-landscape.jpg");
+  --bg-mobile: url("assets/images/bg-mobile.jpg");
+
+  /* Break Point */
+  --breakpoint-wide: 1440px;
+
+  /* Font Sizes */
+  --font-size-xs: 12px;
+  --font-size-xs-line: 16px;
+  --font-size-sm: 14px;
+  --font-size-sm-line: 20px;
+  --font-size-base: 16px;
+  --font-size-base-line: 19.5px;
+  --font-size-lg: 18px;
+  --font-size-lg-line: 21.94px;
+  --font-size-xl: 20px;
+  --font-size-xl-line: 24.38px;
+  --font-size-2xl: 24px;
+  --font-size-2xl-line: 29.26px;
+  --font-size-3xl: 28px;
+  --font-size-3xl-line: 50px;
+  --font-size-3_5xl: 35px;
+  --font-size-3_5xl-line: 55px;
+  --font-size-4xl: 48px;
+  --font-size-4xl-line: 58px;
+  --font-size-5xl: 60px;
+  --font-size-5xl-line: 58px;
+  --font-size-6xl: 76px;
+  --font-size-6xl-line: 106px;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-16 py-10;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-comfortaa text-gray-500 text-sm;
+  }
+}
+
+:root {
+  --bg-landscape: url("assets/images/bg-landscape.jpg");
+  --bg-mobile: url("assets/images/bg-mobile.jpg");
+}
+
+.hero-section {
+  background-image: var(--bg-landscape);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 765px) {
+  .hero-section {
+    background-image: var(--bg-mobile);
+  }
+}
