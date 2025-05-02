@@ -19,7 +19,7 @@ const MainLayout = () => {
         {/* Not Fount page */}
         <Route path="*" element={<Error />} />
       </Routes>
-     {/* Footer */}
+  
     </div>
   )
 }

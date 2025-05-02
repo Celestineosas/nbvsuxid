@@ -23,7 +23,6 @@ const Button = ({ label }: ButtonProps) => {
             variants={buttonVarients}
             initial="hidden"
             animate="visible"
-            whileHover={{ scale: 2.1}}
             transition={{
                 delay: 2,
                 type: "spring",
