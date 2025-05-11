@@ -7,6 +7,8 @@ import project1 from "./project1.jpg"
 import project2 from "./project2.jpg"
 import project3 from "./project3.jpg"
 
+import parallex1 from "./parallex1.jpg"
+
 
 
 export{
@@ -18,5 +20,7 @@ export{
 
     project1,
     project2,
-    project3
+    project3,
+
+    parallex1
 }

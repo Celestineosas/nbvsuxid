@@ -1,17 +1,18 @@
-export const SlideRight = (delay: number) => {
+export const ImgRight = () => {
     return {
       hidden: {
         opacity: 0,
-        x: '-100'
+        x: -200
       },
       visible: {
         opacity: 1,
         x: 0,
         transition: {
-          duration: 1,
-          delay: delay
+         type : "spring",
+         stiffness: 100,
+          delay: 0.4,
+         
         }
       }
     };
   };
-  

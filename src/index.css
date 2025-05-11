@@ -114,6 +114,8 @@
 :root {
   --bg-landscape: url("assets/images/bg-landscape.jpg");
   --bg-mobile: url("assets/images/bg-mobile.jpg");
+  --parallex-landscape: url("assets/images/parallex-bg.jpg");
+  --parallex-mobile: url("assets/images/parallex-bg-sm.jpg");
 }
 
 .hero-section {
@@ -122,9 +124,18 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.parallex-section{
+  background-image: var(--parallex-landscape);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 @media screen and (max-width: 765px) {
   .hero-section {
     background-image: var(--bg-mobile);
+  }
+  .parallex-section{
+    background-image: var(--parallex-mobile);
   }
 }

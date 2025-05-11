@@ -2,7 +2,7 @@ export const SlideLeft = (delay: number) => {
     return {
       hidden: {
         opacity: 0,
-        x: '1000'
+        x: '100'
       },
       visible: {
         opacity: 1,

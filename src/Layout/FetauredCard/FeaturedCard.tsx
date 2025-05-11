@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { SlideRight } from "../../utilies/SlideRight";
+
+import { SlideLeft } from "../../utilies/SlideLeft";
 
 type FeaturedProps = {
     img: string;
@@ -11,10 +12,9 @@ type FeaturedProps = {
 const FeaturedCard = ({ img, text, price, delay }: FeaturedProps) => {
     return (
         <motion.div
-            variants={SlideRight(delay)}
+            variants={SlideLeft(delay)}
             initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
+            whileInView={"visible"}
             className="flex flex-1 flex-col gap-3"
         >
             <img src={img} alt={text} width={270} className='object-contain object-center w-full' />
