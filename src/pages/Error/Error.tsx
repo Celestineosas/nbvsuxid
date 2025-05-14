@@ -1,3 +1,4 @@
+import Transition from "../../utilies/Transition"
 
 
 const Error = () => {
@@ -8,4 +9,4 @@ const Error = () => {
   )
 }
 
-export default Error
+export default Transition(Error)

@@ -1,10 +1,15 @@
+import FooterContent from "../../utilies/FooterContent";
 
-const Footer = () => {
+
+export default function Footer() {
   return (
-    <div>
-      Footer Page
+    <div 
+      className='relative lg:h-[400px] h-[700px] max-sm:h-[500px] ' 
+      style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
+    >
+      <div className='fixed bottom-0 lg:h-[400px] h-[700px] max-sm:h-[500px] w-full'>
+        <FooterContent />
+      </div>
     </div>
   )
 }
-
-export default Footer

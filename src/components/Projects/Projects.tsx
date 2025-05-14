@@ -27,6 +27,7 @@ const Projects = () => {
                             variants={index === 1 ? ImgLeft() : ImgRight()}
                             initial="hidden"
                             whileInView={"visible"}
+                            viewport={{ once: true }}
                             width={270}
                             height={270}
                             src={item.image} alt={item.text} className="lg:w-1/2 w-full object-contain object-center " />
@@ -35,17 +36,19 @@ const Projects = () => {
                                 variants={index === 1 ? SlideLeft(0.6) : SlideRight(0.6)}
                                 initial="hidden"
                                 whileInView={"visible"}
-
+                                viewport={{ once: true }}
                                 className="sm:text-4xl text-3xl text-anon-dark font-semibold">{item.title}</motion.h2>
                             <motion.p
                                 variants={index === 1 ? SlideLeft(0.9) : SlideRight(0.9)}
                                 initial="hidden"
                                 whileInView={"visible"}
+                                viewport={{ once: true }}
                                 className=" text-gray-700 sm:text-lg text-md leading-loose font-semibold">{item.text}</motion.p>
                             <motion.div
                                 variants={index === 1 ? SlideLeft(1.2) : SlideRight(1.2)}
                                 initial="hidden"
                                 whileInView={"visible"}
+                                viewport={{ once: true }}
                             >
                                 <Link to='collections' className="flex gap-3 font-black sm:text-lg text-md items-center">
                                     <h3>See Projects</h3>

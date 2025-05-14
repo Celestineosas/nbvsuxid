@@ -15,6 +15,7 @@ const FeaturedCard = ({ img, text, price, delay }: FeaturedProps) => {
             variants={SlideLeft(delay)}
             initial="hidden"
             whileInView={"visible"}
+            viewport={{ once: true }}
             className="flex flex-1 flex-col gap-3"
         >
             <img src={img} alt={text} width={270} className='object-contain object-center w-full' />
